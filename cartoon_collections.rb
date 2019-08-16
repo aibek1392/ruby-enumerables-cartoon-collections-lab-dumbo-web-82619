@@ -27,7 +27,7 @@ def find_the_cheese(types)
   types.select do |cheese|
       cheese_types.include?(cheese)
       
-   end
+   end[0]
   
  
 
