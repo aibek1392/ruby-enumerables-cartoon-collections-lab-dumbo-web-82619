@@ -21,16 +21,15 @@ def long_planeteer_calls(cals)
  result
 end
 def find_the_cheese(types)
-  result = nil
+
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  types. do |cheese|
-     if types.includes?("cheddar")
-       result = true
-     end
+  types.select do |cheese|
+      cheese_types.includes?(cheese)
+      
    end
   
-  result
+ 
 
 end
  
